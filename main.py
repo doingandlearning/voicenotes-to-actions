@@ -60,7 +60,9 @@ def generate_summary_and_action(transcriptions):
     """Generates summary and action points from the transcriptions."""
     prompt = f"""
     Here is a set of transcriptions from various voice notes. Please provide a summary of the key points, and list actionable items.
-    
+    The action items should be clear and concise, and should be extracted from the transcriptions.
+    They should have checkboxes for easy tracking.
+
     Transcriptions:
     {transcriptions}
     """
